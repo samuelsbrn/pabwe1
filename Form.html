@@ -2,10 +2,11 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Form Pendaftaran</title>
+  <!-- Supaya responsif di perangkat mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Blog</title>
 </head>
 <body>
-  <h1>Form Pendaftaran</h1>
   <nav>
     <a href="blog.html">Blog</a> | 
     <a href="form.html">Form Pendaftaran</a> | 
@@ -14,21 +15,36 @@
   </nav>
   <hr>
 
+  <h1>Pengalaman di Dunia Informatika</h1>
+  <img src="3b200ad1-c793-4ca6-9cc1-229a5a8ceb17.png" 
+       alt="Cover Blog" width="400">
+
+  <p><strong>Author:</strong> Samuel Faldhieto Sibarani</p>
+  <p><strong>Tanggal Postingan:</strong> 05-09-2025</p>
+  <p><strong>Deskripsi Blog:</strong> 
+     Pengalaman saya selama belajar di dunia informatika penuh dengan tantangan dan pembelajaran baru.
+  </p>
+
+  <hr>
+
+  <!-- Bagian komentar dengan id -->
+  <h2 id="komentar">Komentar</h2>
+
   <form>
-    Nama Lengkap: <input type="text" name="nama"><br><br>
-    Jenis Kelamin: 
-    <input type="radio" name="jk" value="Laki-laki"> Laki-laki 
-    <input type="radio" name="jk" value="Perempuan"> Perempuan <br><br>
-    Tempat Lahir: <input type="text" name="tempat"><br><br>
-    Tanggal Lahir: <input type="date" name="tgl"><br><br>
-    Hobi: 
-    <input type="checkbox" name="hobi" value="Coding"> Coding 
-    <input type="checkbox" name="hobi" value="Membaca"> Membaca 
-    <input type="checkbox" name="hobi" value="Olahraga"> Olahraga <br><br>
-    Password: <input type="password" name="pass"><br><br>
-    <input type="checkbox" name="persetujuan"> Saya setuju dengan ketentuan <br><br>
-    <input type="reset" value="Reset"> 
-    <input type="submit" value="Submit">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
+    
+    <label for="komentarText">Komentar:</label><br>
+    <textarea id="komentarText" name="komentar" placeholder="Tulis komentar di sini"></textarea><br><br>
+    
+    <button type="submit">Kirim</button>
   </form>
+
+  <h3>Daftar Komentar:</h3>
+  <ul>
+    <li><strong>Ruben:</strong> Keren dan sangat bermanfaat</li>
+    <li><strong>Jopar:</strong> Terima kasih sudah berbagi pengalaman.</li>
+    <li><strong>Tuani:</strong> Tetap semangat dan improve</li>
+  </ul>
 </body>
 </html>
