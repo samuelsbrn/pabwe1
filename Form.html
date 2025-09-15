@@ -2,49 +2,55 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <!-- Supaya responsif di perangkat mobile -->
+  <!-- Tambahkan supaya responsif di mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Blog</title>
+  <title>Form Pendaftaran</title>
 </head>
 <body>
+  <h1>Form Pendaftaran</h1>
   <nav>
-    <a href="blog.html">Blog</a> | 
-    <a href="form.html">Form Pendaftaran</a> | 
-    <a href="tabel.html">Tabel Nilai</a> | 
-    <a href="cv.html">Curriculum Vitae</a>
-  </nav>
-  <hr>
-
-  <h1>Pengalaman di Dunia Informatika</h1>
-  <img src="3b200ad1-c793-4ca6-9cc1-229a5a8ceb17.png" 
-       alt="Cover Blog" width="400">
-
-  <p><strong>Author:</strong> Samuel Faldhieto Sibarani</p>
-  <p><strong>Tanggal Postingan:</strong> 05-09-2025</p>
-  <p><strong>Deskripsi Blog:</strong> 
-     Pengalaman saya selama belajar di dunia informatika penuh dengan tantangan dan pembelajaran baru.
-  </p>
+  <a href="index.html">Home</a> | 
+  <a href="blog.html">Blog</a> | 
+  <a href="form.html">Form</a> | 
+  <a href="tabel.html">Tabel</a> | 
+  <a href="cv.html">CV</a>
+</nav>
 
   <hr>
-
-  <!-- Bagian komentar dengan id -->
-  <h2 id="komentar">Komentar</h2>
 
   <form>
-    <label for="nama">Nama:</label>
+    <!-- Label terhubung dengan input pakai for + id -->
+    <label for="nama">Nama Lengkap:</label>
     <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
-    
-    <label for="komentarText">Komentar:</label><br>
-    <textarea id="komentarText" name="komentar" placeholder="Tulis komentar di sini"></textarea><br><br>
-    
-    <button type="submit">Kirim</button>
-  </form>
 
-  <h3>Daftar Komentar:</h3>
-  <ul>
-    <li><strong>Ruben:</strong> Keren dan sangat bermanfaat</li>
-    <li><strong>Jopar:</strong> Terima kasih sudah berbagi pengalaman.</li>
-    <li><strong>Tuani:</strong> Tetap semangat dan improve</li>
-  </ul>
+    <span>Jenis Kelamin:</span><br>
+    <input type="radio" id="laki" name="jk" value="Laki-laki">
+    <label for="laki">Laki-laki</label>
+    <input type="radio" id="perempuan" name="jk" value="Perempuan">
+    <label for="perempuan">Perempuan</label><br><br>
+
+    <label for="tempat">Tempat Lahir:</label>
+    <input type="text" id="tempat" name="tempat" placeholder="Contoh: Balige"><br><br>
+
+    <label for="tgl">Tanggal Lahir:</label>
+    <input type="date" id="tgl" name="tgl"><br><br>
+
+    <span>Hobi:</span><br>
+    <input type="checkbox" id="coding" name="hobi" value="Coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+    <label for="membaca">Membaca</label>
+    <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+    <label for="olahraga">Olahraga</label><br><br>
+
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass" placeholder="Minimal 6 karakter"><br><br>
+
+    <input type="checkbox" id="persetujuan" name="persetujuan">
+    <label for="persetujuan">Saya setuju dengan ketentuan</label><br><br>
+
+    <input type="reset" value="Reset"> 
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
