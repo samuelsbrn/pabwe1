@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Struktur Tabel Nilai</title>
+</head>
+<body>
+    <h2>Daftar Nilai Mahasiswa</h2>
+    <nav>
+        <a href="blog.html">Blog</a> | 
+        <a href="form.html">Form Pendaftaran</a> | 
+        <a href="tabel.html">Tabel Nilai</a> | 
+        <a href="cv.html">Curriculum Vitae</a>
+    </nav>
+    <hr>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <!-- Header baris pertama -->
+        <tr>
+            <th rowspan="3">No</th>
+            <th rowspan="3">NIM</th>
+            <th rowspan="3">Nama</th>
+            <th rowspan="3">Program Studi</th>
+            <th rowspan="3">Kelas</th>
+            <th rowspan="3">Bentuk <th> Komponen <hr> Bobot Nilai Akhir</hr>
+
+            <!-- Kelompok nilai -->
+            <th colspan="4">Kuis</th>
+            <th colspan="5">Proyek</th>
+            <th colspan="5">Tugas</th>
+            <th colspan="4">UAS</th>
+            <th colspan="6">UTS</th>
+
+            <th rowspan="3">Bentuk <hr> Komponen <hr> Bobot/Nilai</hr>
+        </tr>
+
+        <!-- Header baris kedua -->
+        <tr>
+            <!-- Kuis -->
+            <th>K1-1</th>
+            <th>K1-2</th>
+            <th>Total</th>
+            <th>Bobot</th>
+
+            <!-- Proyek -->
+            <th>P2-1</th>
+            <th>P1-1</th>
+            <th>P3-1</th>
+            <th>Total</th>
+            <th>Bobot</th>
+
+            <!-- Tugas -->
+            <th>T1-1</th>
+            <th>T2-1</th>
+            <th>T3-1</th>
+            <th>Total</th>
+            <th>Bobot</th>
+
+            <!-- UAS -->
+            <th>UAS1-1</th>
+            <th>UAS2-1</th>
+            <th>Total</th>
+            <th>Bobot</th>
+
+            <!-- UTS -->
+            <th>UTS1-1</th>
+            <th>UTS2-1</th>
+            <th>UTS2-2</th>
+            <th>UTS2-3</th>
+            <th>Total</th>
+            <th>Bobot</th>
+        </tr>
+
+        <!-- Header baris ketiga (Bobot nilai komponen) -->
+        <tr>
+            <!-- Kuis -->
+            <th>25</th>
+            <th>75</th>
+            <th>100</th>
+            <th>10</th>
+
+            <!-- Proyek -->
+            <th>50</th>
+            <th>25</th>
+            <th>25</th>
+            <th>100</th>
+            <th>5</th>
+
+            <!-- Tugas -->
+            <th>50</th>
+            <th>25</th>
+            <th>25</th>
+            <th>100</th>
+            <th>15</th>
+
+            <!-- UAS -->
+            <th>50</th>
+            <th>50</th>
+            <th>100</th>
+            <th>40</th>
+
+            <!-- UTS -->
+            <th>25</th>
+            <th>25</th>
+            <th>25</th>
+            <th>25</th>
+            <th>100</th>
+            <th>30</th>
+        </tr>
+
+        <!-- Data Mahasiswa -->
+        <tr>
+            <td>1</td>
+            <td>12345678901</td>
+            <td>Samuel Sibarani</td>
+            <td>Informatika</td>
+            <td>IF2</td>
+            <td>0</td> <!-- Bentuk Komponen Bobot Nilai Akhir -->
+            <td></td><td></td><td></td><td></td> <!-- Kuis -->
+            <td></td><td></td><td></td><td></td><td></td> <!-- Proyek -->
+            <td></td><td></td><td></td><td></td><td></td> <!-- Tugas -->
+            <td></td><td></td><td></td><td></td> <!-- UAS -->
+            <td></td><td></td><td></td><td></td><td></td><td></td> <!-- UTS -->
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>12345678902</td>
+            <td>Ruben Sianipar</td>
+            <td>Teknik Kimia</td>
+            <td>TK3</td>
+            <td>0</td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>12345678903</td>
+            <td>Goklas Hutapea</td>
+            <td>Teknik Pertanian</td>
+            <td>TP1</td>
+            <td>0</td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>12345678904</td>
+            <td>Tuani Hutapea</td>
+            <td>Teknik Pertambangan</td>
+            <td>TPT1</td>
+            <td>0</td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>12345678905</td>
+            <td>Johnatan Parapat</td>
+            <td>Teknik Mesin</td>
+            <td>TM1</td>
+            <td>0</td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>0</td>
+        </tr>
+    </table>
+</body>
+</html>
